@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Paycad</string>
+    <string name="pay_cad">Pay cad</string>
+    <string name="safe_secure"><![CDATA[100% safe & secure]]></string>
+    <string name="copyright">Copyright @ 2023 paycard all rights reserved</string>
+    <string name="generate_verification_code">Generate Verification code</string>
+    <string name="verify_your_account">Verify your account by entering these 5 digits</string>
+    <string name="regenerating_code_in">Regenerating code in</string>
+
 </resources>
