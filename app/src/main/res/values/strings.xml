@@ -6,5 +6,6 @@
     <string name="generate_verification_code">Generate Verification code</string>
     <string name="verify_your_account">Verify your account by entering these 5 digits</string>
     <string name="regenerating_code_in">Regenerating code in</string>
+    <string name="timer">0s</string>
 
 </resources>
