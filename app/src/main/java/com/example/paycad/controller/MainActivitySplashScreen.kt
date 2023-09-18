@@ -22,8 +22,10 @@ class MainActivitySplashScreen : AppCompatActivity() {
         countdownTimer = object : CountDownTimer(3000, 1000) {
             @SuppressLint("StringFormatInvalid")
             override fun onTick(millisUntilFinished: Long) {
-                // Actualizar el texto del temporizador
-                textViewTimer.text = getString(R.string.timer, millisUntilFinished / 1000)
+                // Formatear el tiempo restante en segundos
+                val seconds = (millisUntilFinished / 1000).toInt()
+                val formattedTime = "$seconds s"
+                textViewTimer.text = formattedTime
             }
 
             override fun onFinish() {
