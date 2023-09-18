@@ -8,7 +8,7 @@
     <color name="black">#2D2B2E</color>
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#FF1744</color>
-
+    <color name="primary_splash">#A6FF1744</color>
     <color name="text_primary">#000444</color>
     <color name="text_green">#23D34C</color>
     <color name="circle_backgroud">#EFF2FC</color>
