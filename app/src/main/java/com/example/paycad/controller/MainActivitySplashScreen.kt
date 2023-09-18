@@ -19,7 +19,7 @@ class MainActivitySplashScreen : AppCompatActivity() {
         textViewTimer = findViewById(R.id.segundos_screen)
 
         // Inicializar el temporizador
-        countdownTimer = object : CountDownTimer(3000, 1000) {
+        countdownTimer = object : CountDownTimer(4000, 1000) {
             @SuppressLint("StringFormatInvalid")
             override fun onTick(millisUntilFinished: Long) {
                 // Formatear el tiempo restante en segundos
