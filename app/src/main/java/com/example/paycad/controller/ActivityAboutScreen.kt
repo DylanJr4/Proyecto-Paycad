@@ -9,4 +9,5 @@ class ActivityAboutScreen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about_screen)
     }
+
 }
