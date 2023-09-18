@@ -12,22 +12,22 @@
         android:theme="@style/Theme.Paycad"
         tools:targetApi="31">
         <activity
-            android:name=".ActivityHomeScreen"
+            android:name=".controller.ActivityHomeScreen"
             android:exported="false" />
         <activity
-            android:name=".ActivityVerificationScreen"
+            android:name=".controller.ActivityVerificationScreen"
             android:exported="false" />
         <activity
-            android:name=".ActivityIdentificationScreen"
+            android:name=".controller.ActivityIdentificationScreen"
             android:exported="false" />
         <activity
-            android:name=".ActivityGenerationCodeScreen"
+            android:name=".controller.ActivityGenerationCodeScreen"
             android:exported="false" />
         <activity
-            android:name=".ActivityAboutScreen"
+            android:name=".controller.ActivityAboutScreen"
             android:exported="false" />
         <activity
-            android:name=".MainActivitySplashScreen"
+            android:name=".controller.MainActivitySplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,6 +35,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>

@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">Paycad</string>
+    <string name="copyright_2023_paycard_all_rights_reserverd">Copyright @ 2023 paycard all rights reserverd</string>
+    <string name="_100_safe_secure"><![CDATA[100% Safe & Secure]]></string>
+    <string name="logo_payCad">TODO</string>
+    <string name="pay_cad">Pay Cad</string>
+    <string name="todo">TODO</string>
+    <string name="i_provide_essential_stuff_for_your_ui_designs_every_tuesday">I provide essential stuff for your \nui designs every tuesday!</string>
+    <string name="send_and_receive_money">Send and receive money</string>
+    <string name="pay_bills">Pay bills</string>
+    <string name="explore_exciting_offers">Explore exciting offers</string>
+    <string name="next">Next</string>
+    <string name="welcome_to_paycad">Welcome to Paycad</string>
+    <string name="initial_amount">Initial amount</string>
+    <string name="full_name">Full name</string>
+    <string name="full_namea">Full name</string>
+    <string name="initial_amounta">Initial amount</string>
+    <string name="what_s_your_name">What\'s your name?</string>
+    <string name="hello">Hello</string>
+    <string name="allisson">Allisson!!</string>
+    <string name="generate_new_code">GENERATE NEW CODE</string>
 </resources>

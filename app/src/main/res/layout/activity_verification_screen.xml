@@ -4,6 +4,194 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/circle_backgroud"
     tools:context=".controller.ActivityVerificationScreen">
 
+    <Button
+        android:id="@+id/btnNextName3"
+        android:layout_width="255dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/material_dynamic_neutral30"
+        android:fontFamily="sans-serif"
+        android:text="@string/generate_new_code"
+        android:textColor="@color/circle_backgroud"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNextName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/btnNextName2"
+        android:layout_width="285dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="@color/primary"
+        android:fontFamily="sans-serif"
+        android:text="@string/next"
+        android:textColor="@color/circle_backgroud"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="290dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="65dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img1_splash_screen"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/hello"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/allisson"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtLayoutCode1"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre"
+        tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCode1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/material_dynamic_neutral50"
+            android:textColorHint="#757575"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtLayoutCode2"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtLayoutCode1"
+        app:layout_constraintStart_toEndOf="@+id/edtLayoutCode1"
+        app:layout_constraintTop_toTopOf="@+id/edtLayoutCode1">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCode2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/material_dynamic_neutral50"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtLayoutCode3"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtLayoutCode2"
+        app:layout_constraintStart_toEndOf="@+id/edtLayoutCode2"
+        app:layout_constraintTop_toTopOf="@+id/edtLayoutCode2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCode3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/material_dynamic_neutral50"
+            android:textColorHint="#757575"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtLayoutCode4"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtLayoutCode3"
+        app:layout_constraintStart_toEndOf="@+id/edtLayoutCode3"
+        app:layout_constraintTop_toTopOf="@+id/edtLayoutCode3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCode4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/material_dynamic_neutral50"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtLayoutCode5"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtLayoutCode4"
+        app:layout_constraintStart_toEndOf="@+id/edtLayoutCode4"
+        app:layout_constraintTop_toTopOf="@+id/edtLayoutCode4">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCode5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/material_dynamic_neutral50"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

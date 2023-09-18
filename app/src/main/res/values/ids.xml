@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnNextName3" type="id">Get new code</item>
+    <item name="btnNextName2" type="id">Next</item>
+    <item name="imageView9" type="id" />
+    <item name="imageView10" type="id">img</item>
+    <item name="textView12" type="id">nombre</item>
+    <item name="txtNombre" type="id">nombre2</item>
+    <item name="edtLayoutCode1" type="id">a</item>
+    <item name="edtCode1" type="id">s</item>
+    <item name="edtLayoutCode2" type="id">d</item>
+    <item name="edtCode2" type="id">3</item>
+    <item name="edtLayoutCode3" type="id">l3</item>
+    <item name="edtCode3" type="id">e3</item>
+    <item name="edtLayoutCode4" type="id">l4</item>
+    <item name="edtCode4" type="id">e4</item>
+    <item name="edtLayoutCode5" type="id">l5</item>
+    <item name="edtCode5" type="id">e5</item>
+</resources>
