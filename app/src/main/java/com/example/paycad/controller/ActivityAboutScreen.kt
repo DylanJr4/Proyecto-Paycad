@@ -3,6 +3,7 @@ package com.example.paycad.controller
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+
 import android.widget.Button
 import android.widget.TextView
 import com.example.paycad.R
@@ -38,5 +39,6 @@ class ActivityAboutScreen : AppCompatActivity() {
             // Si el usuario presiona el botón de atrás desde un fragmento, navegamos a la pantalla anterior
             supportFragmentManager.popBackStack()
         }
+
     }
 }
