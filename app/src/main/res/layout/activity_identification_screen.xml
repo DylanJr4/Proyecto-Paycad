@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/circle_backgroud"
-    tools:context=".controladores.NameActivity">
+    tools:context=".controller.ActivityIdentificationScreen">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textEditText"

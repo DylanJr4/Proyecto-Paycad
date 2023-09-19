@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primary"
+    android:backgroundTint="@color/primary"
     tools:context=".controller.ActivityHomeScreen">
 
     <androidx.cardview.widget.CardView
@@ -30,6 +31,44 @@
                 android:text="Save new transaction"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textEditText"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:hint="@string/full_namea"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edtNombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:inputType="text|textImeMultiLine"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/material_dynamic_neutral30"
+                    android:textColorHint="@color/material_dynamic_neutral50"
+                    tools:ignore="TextContrastCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="23dp"
+                android:backgroundTint="@color/btnSave"
+                android:text="Save transaction"
+                android:textColor="@color/purple_700"
+                app:cornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/textEditText"
+                app:layout_constraintStart_toStartOf="@+id/textEditText"
+                app:layout_constraintTop_toBottomOf="@+id/textEditText" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
