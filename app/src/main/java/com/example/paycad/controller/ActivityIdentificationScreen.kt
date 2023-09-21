@@ -3,10 +3,12 @@ package com.example.paycad.controller
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.example.paycad.R
+import com.example.paycad.model.Cliente
 
 class ActivityIdentificationScreen : AppCompatActivity() {
     private lateinit var inputNombre:EditText
@@ -20,6 +22,7 @@ class ActivityIdentificationScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_identification_screen)
+        Log.i("Prueba Identi", Cliente.codigo.toString())
         initComponent()
         initListeners()
     }

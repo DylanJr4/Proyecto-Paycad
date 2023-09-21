@@ -17,7 +17,7 @@
         app:cardCornerRadius="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10">
+        app:layout_constraintTop_toBottomOf="@+id/txtMontoHome">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -30,6 +30,7 @@
                 android:layout_marginStart="43dp"
                 android:layout_marginTop="17dp"
                 android:text="Save new transaction"
+                android:textColor="@color/material_dynamic_neutral40"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -379,6 +380,7 @@
                 android:id="@+id/editTextTextPersonName"
                 android:layout_width="259dp"
                 android:layout_height="51dp"
+                android:backgroundTint="@drawable/edittext_background_personalizado"
                 android:layout_marginStart="77dp"
                 android:layout_marginTop="14dp"
                 android:layout_marginEnd="76dp"
@@ -386,7 +388,7 @@
                 android:inputType="textPersonName"
                 android:paddingLeft="20dp"
                 android:paddingTop="20dp"
-                android:text="@string/full_name"
+                android:text="180,000"
                 android:textColor="#0B0B0B"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -418,7 +420,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtNombreHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -448,12 +450,12 @@
         android:layout_marginEnd="10dp"
         android:text="USD"
         android:textColor="@color/blanca_cansao"
-        app:layout_constraintBottom_toBottomOf="@+id/textView10"
-        app:layout_constraintEnd_toStartOf="@+id/textView10"
-        app:layout_constraintTop_toTopOf="@+id/textView10" />
+        app:layout_constraintBottom_toBottomOf="@+id/txtMontoHome"
+        app:layout_constraintEnd_toStartOf="@+id/txtMontoHome"
+        app:layout_constraintTop_toTopOf="@+id/txtMontoHome" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/txtMontoHome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"

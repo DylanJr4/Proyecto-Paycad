@@ -19,6 +19,7 @@ class ActivityVerificationScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_verification_screen)
+        Log.i("Prueba Verifi", Cliente.codigo.toString())
         initComponet()
         initListeners()
     }
@@ -34,9 +35,8 @@ class ActivityVerificationScreen : AppCompatActivity() {
 
     private fun initListeners() {
         btnNext.setOnClickListener{
-            Log.i("deco  no llegaste hpta", Cliente.codigo.toString())
-            if(codigo.text.toString().toInt() == Cliente.codigo) {
-                Log.i("llegaste al deco", Cliente.codigo.toString())
+            Log.i("Prueba Verifi", Cliente.codigo.toString())
+            if(codigo.text.toString().toInt() == Cliente.codigo){
                 val intent = Intent(this, ActivityHomeScreen::class.java)
                 startActivity(intent)
             }else Toast.makeText(this, "El codigo es incorrecto", Toast.LENGTH_SHORT).show()

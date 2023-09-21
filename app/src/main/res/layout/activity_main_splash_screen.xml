@@ -54,7 +54,7 @@
                 app:srcCompat="@drawable/img_security" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/txtNombreHome"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/safe_secure"
@@ -75,7 +75,7 @@
                 android:textColor="#A6FFFFFF"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                app:layout_constraintTop_toBottomOf="@+id/txtNombreHome" />
 
             <TextView
                 android:id="@+id/segundos_screen"

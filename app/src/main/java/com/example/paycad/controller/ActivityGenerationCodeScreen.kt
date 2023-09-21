@@ -18,6 +18,7 @@ class ActivityGenerationCodeScreen : AppCompatActivity() {
     private lateinit var txtCode5: TextView
     private lateinit var txtContador: TextView
     private lateinit var btnNext: Button
+    private var countDownTimer: CountDownTimer? = null
     companion object{
         var codigoObtenido: Int = 0
     }
@@ -42,9 +43,10 @@ class ActivityGenerationCodeScreen : AppCompatActivity() {
 
     private fun initListener() {
         btnNext.setOnClickListener {
+            countDownTimer?.cancel()
             val intent = Intent(this, ActivityIdentificationScreen::class.java)
             startActivity(intent)
-            Log.i("JFlorez", "GCodigo: $codigoObtenido")
+            Log.i("Prueba Generation", Cliente.codigo.toString())
             finish()
         }
     }
@@ -55,16 +57,16 @@ class ActivityGenerationCodeScreen : AppCompatActivity() {
         txtCode2.text = codigo[1].toString()
         txtCode3.text = codigo[2].toString()
         txtCode4.text = codigo[3].toString()
+        txtCode5.text = codigo[4].toString()
         Cliente.codigo = codigo.toInt()
     }
 
     fun contador(){
-        object : CountDownTimer(10000, 1000){
+        countDownTimer =  object : CountDownTimer(10000, 1000){
             override fun onTick(millisUntilFinished: Long) {
                 val segundos: Int = (millisUntilFinished/1000).toInt() + 1
                 txtContador.text = segundos.toString() + "s"
             }
-
             override fun onFinish() {
                 generarCodigo()
                 contador()
