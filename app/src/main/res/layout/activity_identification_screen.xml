@@ -7,58 +7,8 @@
     android:background="@color/circle_backgroud"
     tools:context=".controller.ActivityIdentificationScreen">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textEditText"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:hint="@string/full_namea"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtNombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:inputType="text|textImeMultiLine"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:textColor="@color/material_dynamic_neutral30"
-            android:textColorHint="@color/material_dynamic_neutral50"
-            tools:ignore="TextContrastCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-
-        android:id="@+id/layoutEditTextMontoInicial"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:hint="@string/initial_amounta"
-        app:boxBackgroundMode="outline"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textEditText">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtMontoInicial"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="sans-serif"
-            android:inputType="text|textImeMultiLine"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
-            android:textColor="@color/material_dynamic_neutral30"
-            android:textColorHint="@color/material_dynamic_neutral50"
-            tools:ignore="TextContrastCheck" />
-    </com.google.android.material.textfield.TextInputLayout>
-
     <Button
-        android:id="@+id/btnNextName"
+        android:id="@+id/btnNextIdentificaion"
         android:layout_width="285dp"
         android:layout_height="58dp"
         android:layout_marginBottom="100dp"
@@ -95,5 +45,41 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <EditText
+        android:id="@+id/inputNombre"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:backgroundTint="@drawable/edittext_background_personalizado"
+        android:ems="10"
+        android:hint="@string/full_name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textColorHint="@color/material_dynamic_neutral50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/inuptMonto"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:backgroundTint="@drawable/edittext_background_personalizado"
+        android:ems="10"
+        android:hint="@string/initial_amounta"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textColorHint="@color/material_dynamic_neutral50"
+        app:layout_constraintEnd_toEndOf="@+id/inputNombre"
+        app:layout_constraintStart_toStartOf="@+id/inputNombre"
+        app:layout_constraintTop_toBottomOf="@+id/inputNombre"
+        tools:ignore="TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

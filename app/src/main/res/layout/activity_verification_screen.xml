@@ -8,7 +8,7 @@
     tools:context=".controller.ActivityVerificationScreen">
 
     <Button
-        android:id="@+id/btnNextName3"
+        android:id="@+id/btnGenerarNuevocodigo"
         android:layout_width="255dp"
         android:layout_height="58dp"
         android:layout_marginBottom="10dp"
@@ -17,13 +17,13 @@
         android:text="@string/generate_new_code"
         android:textColor="@color/circle_backgroud"
         app:cornerRadius="20dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnNextName2"
+        app:layout_constraintBottom_toTopOf="@+id/btnNextVerificacion"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="TextContrastCheck" />
 
     <Button
-        android:id="@+id/btnNextName2"
+        android:id="@+id/btnNextVerificacion"
         android:layout_width="285dp"
         android:layout_height="58dp"
         android:layout_marginBottom="36dp"
@@ -72,126 +72,21 @@
         app:layout_constraintStart_toEndOf="@+id/textView12"
         app:layout_constraintTop_toTopOf="@+id/textView12" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtLayoutCode1"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    <EditText
+        android:id="@+id/inputCodigo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@drawable/edittext_background_personalizado"
+        android:ems="10"
+        android:hint="Enter the code"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="@color/material_dynamic_neutral30"
+        android:textColorHint="@color/material_dynamic_neutral40"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtNombre"
-        tools:ignore="HardcodedText">
+        app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtCode1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="0"
-            android:textAlignment="center"
-            android:textColor="@color/material_dynamic_neutral50"
-            android:textColorHint="#757575"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="DuplicateSpeakableTextCheck,TextContrastCheck" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtLayoutCode2"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/edtLayoutCode1"
-        app:layout_constraintStart_toEndOf="@+id/edtLayoutCode1"
-        app:layout_constraintTop_toTopOf="@+id/edtLayoutCode1">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtCode2"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="0"
-            android:textAlignment="center"
-            android:textColor="@color/material_dynamic_neutral50"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText,TextContrastCheck" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtLayoutCode3"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/edtLayoutCode2"
-        app:layout_constraintStart_toEndOf="@+id/edtLayoutCode2"
-        app:layout_constraintTop_toTopOf="@+id/edtLayoutCode2">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtCode3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="0"
-            android:textAlignment="center"
-            android:textColor="@color/material_dynamic_neutral50"
-            android:textColorHint="#757575"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText,TextContrastCheck" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtLayoutCode4"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/edtLayoutCode3"
-        app:layout_constraintStart_toEndOf="@+id/edtLayoutCode3"
-        app:layout_constraintTop_toTopOf="@+id/edtLayoutCode3">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtCode4"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="0"
-            android:textAlignment="center"
-            android:textColor="@color/material_dynamic_neutral50"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText,TextContrastCheck" />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edtLayoutCode5"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="wrap_content"
-
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        app:layout_constraintBottom_toBottomOf="@+id/edtLayoutCode4"
-        app:layout_constraintStart_toEndOf="@+id/edtLayoutCode4"
-        app:layout_constraintTop_toTopOf="@+id/edtLayoutCode4">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edtCode5"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="0"
-            android:textAlignment="center"
-            android:textColor="@color/material_dynamic_neutral50"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            tools:ignore="HardcodedText,TextContrastCheck" />
-
-    </com.google.android.material.textfield.TextInputLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
