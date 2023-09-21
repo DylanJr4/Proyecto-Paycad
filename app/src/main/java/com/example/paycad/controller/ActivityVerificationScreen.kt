@@ -3,11 +3,13 @@ package com.example.paycad.controller
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import com.example.paycad.R
+import com.example.paycad.model.Cliente
 
 class ActivityVerificationScreen : AppCompatActivity() {
     private lateinit var nombre:TextView
@@ -32,7 +34,9 @@ class ActivityVerificationScreen : AppCompatActivity() {
 
     private fun initListeners() {
         btnNext.setOnClickListener{
-            if(codigo.text.toString().toInt() == ActivityGenerationCodeScreen.codigoObtenido){
+            Log.i("deco  no llegaste hpta", Cliente.codigo.toString())
+            if(codigo.text.toString().toInt() == Cliente.codigo) {
+                Log.i("llegaste al deco", Cliente.codigo.toString())
                 val intent = Intent(this, ActivityHomeScreen::class.java)
                 startActivity(intent)
             }else Toast.makeText(this, "El codigo es incorrecto", Toast.LENGTH_SHORT).show()

@@ -8,6 +8,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.TextView
 import com.example.paycad.R
+import com.example.paycad.model.Cliente
 
 class ActivityGenerationCodeScreen : AppCompatActivity() {
     private lateinit var txtCode1: TextView
@@ -54,8 +55,7 @@ class ActivityGenerationCodeScreen : AppCompatActivity() {
         txtCode2.text = codigo[1].toString()
         txtCode3.text = codigo[2].toString()
         txtCode4.text = codigo[3].toString()
-        txtCode5.text = codigo[4].toString()
-        codigoObtenido = codigo.toInt()
+        Cliente.codigo = codigo.toInt()
     }
 
     fun contador(){
